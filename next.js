@@ -19,16 +19,17 @@ module.exports = {
   },
   plugins: [
     'jsx-a11y',
-    '@typescript-eslint'
+    '@typescript-eslint',
+    'eslint-plugin-import-helpers'
   ],
   rules: {
     'prettier/prettier': ["error", {
-      'printWidth': 80,
+      'printWidth': 120,
       'tabWidth': 2,
-      'singleQuote': true,
+      'singleQuote': false,
       'trailingComma': 'all',
       'arrowParens': 'always',
-      "semi": ["error", "always"],
+      "semi": true,
       'endOfLine': 'auto',
     }],
     'jsx-a11y/alt-text': [
@@ -44,6 +45,21 @@ module.exports = {
     'jsx-a11y/role-has-required-aria-props': 'warn',
     'jsx-a11y/role-supports-aria-props': 'warn',
     'react/no-unknown-property': 'error',
+    'react-hooks/rules-of-hooks': 'error',
+    'import-helpers/order-imports': [
+      'warn',
+      { // example configuration
+        newlinesBetween: 'always',
+        groups: [
+          ['/^react/', '/^next/'],
+          '/module/',
+          '/^@shared/',
+          '/absolute/',
+          ['parent', 'sibling', 'index'],
+        ],
+        alphabetize: { order: 'asc', ignoreCase: true },
+      },
+    ],
   },
   settings: {
     react: {
