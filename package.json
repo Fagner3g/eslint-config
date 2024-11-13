@@ -9,7 +9,7 @@
     "url": "rocketseat/eslint-config-rocketseat"
   },
   "peerDependencies": {
-    "eslint": "^8.0.0",
+    "eslint": "9.x",
     "typescript": ">=5"
   },
   "peerDependenciesMeta": {
