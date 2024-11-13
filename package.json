@@ -9,7 +9,7 @@
     "url": "rocketseat/eslint-config-rocketseat"
   },
   "peerDependencies": {
-    "eslint": "9.x",
+    "eslint": "^8.57.1",
     "typescript": ">=5"
   },
   "peerDependenciesMeta": {
@@ -20,7 +20,7 @@
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
-    "eslint": "^8.56.0",
+    "eslint": "^8.57.1",
     "eslint-config-prettier": "^9.1.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.29.1",
