@@ -46,6 +46,7 @@ module.exports = {
     'jsx-a11y/role-supports-aria-props': 'warn',
     'react/no-unknown-property': 'error',
     'react-hooks/rules-of-hooks': 'off',
+    '@typescript-eslint/ban-ts-comment': 'off',
     'import-helpers/order-imports': [
       'warn',
       { // example configuration
